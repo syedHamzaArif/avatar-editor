@@ -1,0 +1,24 @@
+{
+  "normalColors": [
+    "#FF0000",
+    "#00FF00",
+    "#0000FF",
+    "#FFFF00",
+    "#FF00FF",
+    "#00FFFF",
+    "#FFA500",
+    "#800080",
+    "#008000",
+    "#000080",
+    "#800000",
+    "#808080"
+  ],
+  "gradientColors": [
+    "linear-gradient(to right, #FF0000, #FFA500)",
+    "linear-gradient(to right, #FFA500, #FFFF00)",
+    "linear-gradient(to right, #FFFF00, #00FF00)",
+    "linear-gradient(to right, #00FF00, #0000FF)",
+    "linear-gradient(to right, #0000FF, #8A2BE2)",
+    "linear-gradient(to right, #8A2BE2, #FF0000)"
+  ]
+}

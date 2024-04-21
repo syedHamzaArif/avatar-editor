@@ -1,26 +1,27 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Sidebar from "./components/Sidebar";
+import "./index.css";
+import Emoji from "./pages/emoji";
+import Monogram from "./pages/monogram";
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div className="flex">
+        <Sidebar />
+        <Routes>
+          <Route path="/" element={<Emoji />} />
+          <Route path="/monogram" element={<Monogram />} />
+          <Route
+            path="/photos"
+            element={
+              <div className="bg-gray-900 text-white flex-1 min-h-screen"></div>
+            }
+          />
+        </Routes>
+      </div>
+    </Router>
   );
-}
+};
 
 export default App;
